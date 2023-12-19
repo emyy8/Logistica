@@ -1,0 +1,43 @@
+POST http://localhost:3333/despacho
+Content-Type: application/json
+
+{
+    "numrequerimento": "Numero do reqerimento: 123456",
+    "juiz": "juiz: Carlos",
+    "npaginasrequerimento": 450
+}
+
+###
+
+GET http://localhost:3333/despacho
+
+###
+
+GET http://localhost:3333/despacho?search=123456
+
+###
+
+PUT  http://localhost:3333/despacho/e93ef2a5-a45c-4b34-8624-364862c139a8
+Content-Type: application/json
+
+{
+    "numrequerimento": "Numero do requerimento: 789101",
+    "juiz": "juiz: Felipe",
+    "npaginasrequerimento": 100
+}
+
+
+
+###
+PATCH  http://localhost:3333/despacho/97102fa9-1451-4a42-a890-b6d11ef201cf
+Content-Type: application/json
+
+{
+    "numrequerimento": "numero do requerimento: 121314",
+    "juiz": "juiz: Felipe",
+    "npaginasrequerimento": 100
+}
+
+###
+
+DELETE http://localhost:3333/despacho/c4a1b2f1-3bdb-4a45-80ba-8331fb3d630f
